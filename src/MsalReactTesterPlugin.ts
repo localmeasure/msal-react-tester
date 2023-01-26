@@ -1,4 +1,3 @@
-import {waitFor} from '@testing-library/react'
 export interface ITestRunner {
     spyOn: Function,
     expect: Function,
@@ -12,7 +11,7 @@ export class MsalReactTesterPlugin {
         spyOn: typeof jest !== 'undefined' ? jest.spyOn : () => { },
         expect: typeof jest !== 'undefined' ?  expect : () => { },
         resetAllMocks: typeof jest !== 'undefined' ? jest.resetAllMocks : () => { },
-        waitingFor: typeof jest !== 'undefined' ? waitFor : () => { }
+        waitingFor: undefined
     };
 
 

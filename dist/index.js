@@ -14,7 +14,6 @@ function ___$insertStyle(css) {
 Object.defineProperty(exports, '__esModule', { value: true });
 
 var msalBrowser = require('@azure/msal-browser');
-var react = require('@testing-library/react');
 
 /******************************************************************************
 Copyright (c) Microsoft Corporation.
@@ -82,7 +81,7 @@ var MsalReactTesterPlugin = /** @class */ (function () {
         spyOn: typeof jest !== 'undefined' ? jest.spyOn : function () { },
         expect: typeof jest !== 'undefined' ? expect : function () { },
         resetAllMocks: typeof jest !== 'undefined' ? jest.resetAllMocks : function () { },
-        waitingFor: typeof jest !== 'undefined' ? react.waitFor : function () { }
+        waitingFor: undefined
     };
     return MsalReactTesterPlugin;
 }());

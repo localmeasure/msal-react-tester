@@ -12,5 +12,5 @@ export default {
     }
   ],
   plugins: [sass({ insert: true }), typescript()],
-  external: ['@azure/msal-browser', '@testing-library/react']
+  external: ['@azure/msal-browser']
 }
